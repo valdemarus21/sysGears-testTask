@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Conversion Values</title>
+		<link href="./styles/default.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap"
+			rel="stylesheet"
+		/>
+		<script defer type="module" src="./main.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="title">Онлайн конвертор</h1>
+
+		<div class="query-box">
+			<div class="query-box__item">
+			<label class="query-box__text" for="fromUnit">З одиниці виміру</label>
+			<input class="query-box__input" type="text" id="fromUnit" placeholder="for example mm or cm, ft and ect" />
+		</div>
+
+		<div class="query-box__item">
+			<label  class="query-box__text"for="value">Цифрове значення для конвертації</label>
+			<input class="query-box__input" type="number" id="value" placeholder="Enter value" />
+		</div>
+
+		<div class="query-box__item">
+			<label  class="query-box__text"for="convertTo">Конвертувати в одиниці виміру</label>
+			<input class="query-box__input" type="text" id="convertTo" placeholder="for example mm or cm, ft and ect" />
+		</div>
+		</div>
+
+		<div class="result-box">
+			<button class="result-box__btn" id="convertButton">Обчислити</button>
+
+		<h2 class="result-box__title">Результат</h2>
+		<p class="result-box__result" id="result"></p>
+
+	</div>
+	<div class="conversion-box">
+		<h2 class="conversion-box__title">Величини для конвертації</h2>
+		<p class="conversion-box__adv">Їх завжди можна змінити у repositories -> data.js</p>
+		<ul id="conversionList" class="conversion-box__list"></ul>
+	</div>
+		</div>
+	</body>
+</html>

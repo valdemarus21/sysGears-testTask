@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="./styles/default.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap"
+			rel="stylesheet"
+		/>
+		
+		<title>AstroAdventure</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="astro-box">
+				<div class="astro-box__heading-block">
+					<div class="astro-box__text-inner">
+						<h1 class="astro-box__title title">AstroAdventure</h1>
+						<p class="astro-box__subtitle subtitle">Натисніть, щоб почати гру</p>
+					</div>
+					<button class="button-30" role="button" id="start-btn">START</button>
+					<button class="button-30" role="button" id="stop-btn">STOP</button>
+					<div class="heading-block_btn-blur"></div>
+				</div>
+				<div class="astro-box__query-block">
+					<div class="query-block__text-inner">
+						<h2 class="query-block__title title">Впишіть кооринати для вiдправки зонду</h2>
+						<p class="query-block__subtitle subtitle">
+							Впишіть буд'які координати, вони мают бути цілочисленними від 0 до 100
+						</p>
+					</div>
+					<div class="query-block">
+						<div class="query-block__error-display">
+							<p class="query-block__error-display-text"></p>
+							<button class="query-block__error-display-bnt-close">X</button>
+						</div>
+						<div class="query-block__inputs-container">
+							<div class="query-block__inputs">
+								<div class="input__inner">
+									<div class="query-block__inputs-zond">
+										<p class="query-block__inputs-zond-number">НОВИЙ ЗОНД</p>
+										<button id="add-new" class="query-block__inputs-zond-add">+</button>
+									</div>
+
+									<p class="query-block__input-text">X координата :</p>
+									<input class="query-block__input" id="input-1" type="text" />
+								</div>
+								<div class="input__inner">
+									<p class="query-block__input-text">Y координата :</p>
+									<input class="query-block__input" id="input-2" type="text" />
+								</div>
+								<div class="input__inner">
+									<p class="query-block__input-text">Z координата :</p>
+									<input class="query-block__input" id="input-3" type="text" />
+								</div>
+								<button class="query-block__input-btn">ADD DATA</button>
+							</div>
+						</div>
+
+	
+					</div>
+				</div>
+				<div class="result-block">
+					<div class="result-block__inner">
+						<p class="result-block__subtitle subtitle">Результат</p>
+						<p class="result-block__text" id="result">000000</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/main.js" type="module" defer></script>
+	</body>
+</html>

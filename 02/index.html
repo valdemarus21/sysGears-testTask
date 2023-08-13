@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Сортування та відбір даних</title>
+		<link href="./styles/default.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="sorting-box__text-items">
+				<h1 class="sorting-box__title title">Сортування та відбір данних</h1>
+				<p class="sorting-box__text">Опишіть дані для відбору та сортування:</p>
+			</div>
+			<div class="sorting-box__query">
+				<div class="sorting-box__attention">
+					<div class="attention__text-container">
+						Вхідні дані повинні бути валідними згідно JSON-формату. Якщо виникне помилка,
+						будь-ласка, перевірте правильність введених даних. Приклад правильно введених даних
+						представлений нижче
+					</div>
+					<button class="close__attention">X</button>
+				</div>
+				<textarea id="textarea" class="sorting-box__textarea">
+{
+"data":  [
+{"name": "John", "email": "john2@mail.com"},
+{"name": "John", "email": "john1@mail.com"},
+{"name": "Jane", "email": "jane@mail.com"}
+],
+"condition": {
+"include": [{"name": "John"}],
+ "sortBy": ["email"]
+}
+}
+
+
+                </textarea
+				>
+				<button class="sorting-box__button-clear" id="sort">Відсортувати</button>
+				<button class="sorting-box__button-clear" id="clear">Очистити поле</button>
+			</div>
+			<div class="response-box">
+				<p class="response-box__sort">відповідь:</p>
+				<div id="response">...</div>
+			</div>
+		</div>
+		<script defer type="module" src="./app.js"></script>
+	</body>
+</html>
